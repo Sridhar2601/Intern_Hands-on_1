@@ -1,0 +1,32 @@
+.n {
+    text-decoration: none;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 30px;
+    color: blue;
+
+}
+
+.nb {
+
+    display: flex;
+    justify-content: space-between;
+    padding-left: 75px;
+    padding-right: 80px;
+    background-color: white;
+    align-items: center;
+    align-content: center;
+}
+
+/* .main-one {
+    position: sticky;
+    top: 0;
+    z-index:1;
+} */
+
+li a,
+a {
+    text-decoration: none;
+    color: white;
+}

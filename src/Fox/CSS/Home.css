@@ -1,0 +1,112 @@
+#i {
+    display: inline;
+    color: white;
+    border: 1px solid white;
+    background-color: orangered;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 20px;
+    align-content: center;
+    width: 65px;
+    height: 70px;
+    gap: 10px
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.overlay-icons {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 15px;
+    opacity: 0;
+}
+
+.overlay-icons i {
+    color: orangered;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.image-container:hover .overlay-icons {
+    opacity: 1;
+}
+
+.teacher:hover .h {
+    color: orangered;
+}
+
+.head {
+    color: black;
+    cursor: pointer;
+}
+
+.head:hover {
+    color: orangered;
+}
+
+.image-container1 {
+    position: relative;
+}
+
+.overlay-icons1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    border: 1px solid orangered;
+    background-color: orangered;
+}
+
+.overlay-icons1 i {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.image-container1:hover .overlay-icons1 {
+    opacity: 1;
+}
+
+.head1 {
+    color: white;
+    cursor: pointer;
+}
+
+.head1:hover {
+    color: orangered;
+}
+
+.place::placeholder {
+    color: white;
+    text-align: center;
+}
+
+.sub1{
+    background-color: blue;
+    color:white;
+    text-align:'center'
+
+}
+
+.sub input:hover{
+    background-color: orangered;
+}
+
+#icon{
+    border: 2px solid gray;
+    background-color: gray;
+    padding: 10px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+#g{
+    font-size: 12px;
+}
