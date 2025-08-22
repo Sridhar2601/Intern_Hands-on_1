@@ -14,7 +14,7 @@ export default function Nav() {
                 <div className='d-flex'>
                     <div style={{ alignContent: 'center' }}><i class="fa-solid fa-phone" style={{ color: 'orangered' }}></i></div>
                     <div className='mt-3'>
-                        <p className='ps-2'><b>Call</b><br />Call Us : +91-9876543210</p>
+                        <p className='ps-2'><b>Call</b><br />Call Us : +91-8778204667</p>
                     </div>
                 </div>
                 <div><button className='btn btn-success' style={{ backgroundColor: 'orangered',border:'none'}}>Apply Now</button></div>
