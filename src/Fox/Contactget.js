@@ -5,58 +5,72 @@ export default function Contactget() {
     const [userData, setUserData] = useState([]);
 
     useEffect(() => {
-        axios.get("https://6888a259adf0e59551bac01f.mockapi.io/api/intern/Contact")
-            .then(res => setUserData(res.data));
+        axios
+            .get("https://6888a259adf0e59551bac01f.mockapi.io/api/intern/Contact")
+            .then((res) => setUserData(res.data));
     }, []);
 
     const Delete = (id) => {
-    if (window.confirm("Are you sure you want to delete this contact?")) {
-        axios.delete(`https://6888a259adf0e59551bac01f.mockapi.io/api/intern/Contact/${id}`)
-            .then(() => {
-                setUserData(prevData => prevData.filter(user => user.id !== id));
-            })
-    }
-};
-
+        if (window.confirm("Are you sure you want to delete this contact?")) {
+            axios
+                .delete(`https://6888a259adf0e59551bac01f.mockapi.io/api/intern/Contact/${id}`)
+                .then(() => {
+                    setUserData((prevData) => prevData.filter((user) => user.id !== id));
+                });
+        }
+    };
 
     return (
-        <div style={{ padding: '20px' }}>
+        <div className="container py-4">
             <center>
-                <h2 className='pb-4'>Contact Details</h2>
-                {userData.length > 0 ? (
-                    <table border="1" cellPadding="10" style={{ width: '80%', backgroundColor: 'white', boxShadow: '0 0 10px black' }}>
-                        <thead>
-                            <tr style={{ backgroundColor: 'green', color: 'white' }}>
-                                <th style={{ border: '2px solid black' }}>S.No</th>
-                                <th style={{ border: '2px solid black' }}>Name</th>
-                                <th style={{ border: '2px solid black' }}>Email</th>
-                                <th style={{ border: '2px solid black' }}>Subject</th>
-                                <th style={{ border: '2px solid black' }}>Message</th>
-                                <th style={{ border: '2px solid black' }}>Update</th>
-                                <th style={{ border: '2px solid black' }}>Delete</th>
+                <h2 className="pb-4">Contact Details</h2>
+            </center>
+
+            {userData.length > 0 ? (
+                <div className="table-responsive">
+                    <table className="table table-bordered table-striped table-hover align-middle shadow">
+                        <thead className="table-success text-center">
+                            <tr>
+                                <th>S.No</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Subject</th>
+                                <th>Message</th>
+                                <th>Update</th>
+                                <th>Delete</th>
                             </tr>
                         </thead>
                         <tbody>
                             {userData.map((user, index) => (
-                                <tr key={user.id} style={{ textAlign: 'left' }}>
-                                    <td style={{ border: '2px solid black' }}>{index + 1}</td>
-                                    <td style={{ border: '2px solid black' }}>{user.Name}</td>
-                                    <td style={{ border: '2px solid black' }}>{user.Email}</td>
-                                    <td style={{ border: '2px solid black' }}>{user.Subject}</td>
-                                    <td style={{ border: '2px solid black' }}>{user.Message}</td>
-                                    <td style={{ border: '2px solid black' }}><input type='button' className='btn btn-warning' value='Update'></input></td>
-                                    <td style={{ border: '2px solid black' }}><input type='button' className='btn btn-danger' value='Delete' onClick={() => Delete(user.id)}></input></td>
+                                <tr key={user.id}>
+                                    <td>{index + 1}</td>
+                                    <td>{user.Name}</td>
+                                    <td>{user.Email}</td>
+                                    <td>{user.Subject}</td>
+                                    <td>{user.Message}</td>
+                                    <td>
+                                        <button className="btn btn-warning btn-sm w-100">Update</button>
+                                    </td>
+                                    <td>
+                                        <button
+                                            className="btn btn-danger btn-sm w-100"
+                                            onClick={() => Delete(user.id)}
+                                        >
+                                            Delete
+                                        </button>
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
-                ) : (
-                    <p>Loading data...</p>
-                )}
-            </center>
+                </div>
+            ) : (
+                <p className="text-center">Loading data...</p>
+            )}
         </div>
     );
 }
+
 
 
 // import React, { useEffect, useState } from 'react';

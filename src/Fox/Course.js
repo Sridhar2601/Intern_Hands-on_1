@@ -1,7 +1,9 @@
-import './CSS/Home.css'
+import './CSS/Home.css';
+
 export default function Course() {
     return (
         <div>
+            {/* Hero Section */}
             <div style={{ position: 'relative', height: '50vh', overflow: 'hidden' }}>
                 <div
                     style={{
@@ -15,151 +17,79 @@ export default function Course() {
                         bottom: 0,
                         left: 0,
                         opacity: 0.3,
-                        zIndex: 1
-                    }}></div>
-                    <div style={{ position: 'relative', zIndex: 1,textAlign:'center',paddingTop:'90px'}}>
-                        <h1>Courses</h1>
-                        <a href="/" style={{color:'black'}}>Home<i class="fa-solid fa-greater-than" id='g'></i></a>
-                        <a href='/Course' style={{paddingLeft:'20px',color:'black'}}>Courses<i class="fa-solid fa-greater-than" id='g'></i></a>
-                    </div>
-            </div>
-            <div className='pt-5' style={{ textAlign: 'center' }}>
-                <h1>Our Courses</h1>
-                <p className='mt-4'>Separated they live in. A small river named Duden flows by their place and supplies it with the<br /> necessary regelialia. It is a paradisematic country</p>
-            </div>
-            <div class="row mt-5">
-                <div class="col-md-3 col-lg-3">
-                    <div>
-                        <img src="https://themewagon.github.io/Next.js-Tailwind-CSS-Portfolio-Template/image/blog4.svg" class="card-img-top" alt="..."
-                            height="180px"></img>
-                        <div class="card-body ps-3" style={{ textAlign: 'left' }}>
-                            <div className='d-flex mt-3'>
-                                <p><i class="fa-solid fa-user" style={{ color: 'orangered' }}></i>MR.JOHN</p>
-                                <p className='ps-1'><i class="fa-solid fa-table-cells" style={{ color: 'orangered' }}></i>10 SEATS</p>
-                                <p className='ps-1'><i class="fa-solid fa-calendar-days" style={{ color: 'orangered' }}></i>4 YEARS</p>
-                            </div>
-                            <h5 class="card-title">Electric Engineering</h5>
-                            <p class="card-text mt-3">Separated they live in. A small river named Duden flows by their place<br /> and supplies it with the necessary<br /> regelialia. It is a paradisematic<br /> country</p>
-                            <a href="#" class="btn btn-dark" style={{ backgroundColor: 'orangered' }}>Apply Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div>
-                        <img src="https://themewagon.github.io/Next.js-Tailwind-CSS-Portfolio-Template/image/blog4.svg" class="card-img-top" alt="..."
-                            height="180px"></img>
-                        <div class="card-body ps-3" style={{ textAlign: 'left' }}>
-                            <div className='d-flex mt-3'>
-                                <p><i class="fa-solid fa-user" style={{ color: 'orangered' }}></i>MR.JOHN</p>
-                                <p className='ps-1'><i class="fa-solid fa-table-cells" style={{ color: 'orangered' }}></i>10 SEATS</p>
-                                <p className='ps-1'><i class="fa-solid fa-calendar-days" style={{ color: 'orangered' }}></i>4 YEARS</p>
-                            </div>
-                            <h5 class="card-title">Electric Engineering</h5>
-                            <p class="card-text mt-3">Separated they live in. A small river named Duden flows by their place<br /> and supplies it with the necessary<br /> regelialia. It is a paradisematic<br /> country</p>
-                            <a href="#" class="btn btn-dark" style={{ backgroundColor: 'orangered' }}>Apply Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div>
-                        <img src="https://themewagon.github.io/Next.js-Tailwind-CSS-Portfolio-Template/image/blog4.svg" class="card-img-top" alt="..."
-                            height="180px"></img>
-                        <div class="card-body ps-3" style={{ textAlign: 'left' }}>
-                            <div className='d-flex mt-3'>
-                                <p><i class="fa-solid fa-user" style={{ color: 'orangered' }}></i>MR.JOHN</p>
-                                <p className='ps-1'><i class="fa-solid fa-table-cells" style={{ color: 'orangered' }}></i>10 SEATS</p>
-                                <p className='ps-1'><i class="fa-solid fa-calendar-days" style={{ color: 'orangered' }}></i>4 YEARS</p>
-                            </div>
-                            <h5 class="card-title">Electric Engineering</h5>
-                            <p class="card-text mt-3">Separated they live in. A small river named Duden flows by their place<br /> and supplies it with the necessary<br /> regelialia. It is a paradisematic<br /> country</p>
-                            <a href="#" class="btn btn-dark" style={{ backgroundColor: 'orangered' }}>Apply Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div className='pb-5'>
-                        <img src="https://themewagon.github.io/Next.js-Tailwind-CSS-Portfolio-Template/image/blog4.svg" class="card-img-top" alt="..."
-                            height="180px"></img>
-                        <div class="card-body ps-3" style={{ textAlign: 'left' }}>
-                            <div className='d-flex mt-3'>
-                                <p><i class="fa-solid fa-user" style={{ color: 'orangered' }}></i>MR.JOHN</p>
-                                <p className='ps-1'><i class="fa-solid fa-table-cells" style={{ color: 'orangered' }}></i>10 SEATS</p>
-                                <p className='ps-1'><i class="fa-solid fa-calendar-days" style={{ color: 'orangered' }}></i>4 YEARS</p>
-                            </div>
-                            <h5 class="card-title">Electric Engineering</h5>
-                            <p class="card-text mt-3">Separated they live in. A small river named Duden flows by their place<br /> and supplies it with the necessary<br /> regelialia. It is a paradisematic<br /> country</p>
-                            <a href="#" class="btn btn-dark " style={{ backgroundColor: 'orangered' }}>Apply Now</a>
-                        </div>
-                    </div>
+                        zIndex: 1,
+                    }}
+                ></div>
+                <div
+                    style={{
+                        position: 'relative',
+                        zIndex: 1,
+                        textAlign: 'center',
+                        paddingTop: '90px',
+                    }}
+                >
+                    <h1>Courses</h1>
+                    <a href="/" style={{ color: 'black' }}>
+                        Home <i className="fa-solid fa-greater-than" id="g"></i>
+                    </a>
+                    <a
+                        href="/Course"
+                        style={{ paddingLeft: '20px', color: 'black' }}
+                    >
+                        Courses <i className="fa-solid fa-greater-than" id="g"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="row mt-5">
-                <div class="col-md-3 col-lg-3">
-                    <div>
-                        <img src="https://themewagon.github.io/Next.js-Tailwind-CSS-Portfolio-Template/image/blog4.svg" class="card-img-top" alt="..."
-                            height="180px"></img>
-                        <div class="card-body ps-3" style={{ textAlign: 'left' }}>
-                            <div className='d-flex mt-3'>
-                                <p><i class="fa-solid fa-user" style={{ color: 'orangered' }}></i>MR.JOHN</p>
-                                <p className='ps-1'><i class="fa-solid fa-table-cells" style={{ color: 'orangered' }}></i>10 SEATS</p>
-                                <p className='ps-1'><i class="fa-solid fa-calendar-days" style={{ color: 'orangered' }}></i>4 YEARS</p>
+            {/* Course Section */}
+            <div className="pt-5 text-center">
+                <h1>Our Courses</h1>
+                <p className="mt-4">
+                    Separated they live in. A small river named Duden flows by their place and supplies it with the <br /> necessary regelialia. It is a paradisematic country
+                </p>
+            </div>
+
+            {/* Course Cards */}
+            <div className="container mt-5">
+                <div className="row">
+                    {Array.from({ length: 8 }).map((_, index) => (
+                        <div key={index} className="col-sm-6 col-md-4 col-lg-3 mb-4">
+                            <div className="card h-100 shadow-sm">
+                                <img
+                                    src="https://themewagon.github.io/Next.js-Tailwind-CSS-Portfolio-Template/image/blog4.svg"
+                                    className="card-img-top"
+                                    alt="Course"
+                                    height="180px"
+                                />
+                                <div className="card-body ps-3 text-start">
+                                    <div className="d-flex flex-wrap gap-2 mt-3 small text-muted">
+                                        <p className="mb-0">
+                                            <i className="fa-solid fa-user" style={{ color: 'orangered' }}></i> MR.JOHN
+                                        </p>
+                                        <p className="mb-0">
+                                            <i className="fa-solid fa-table-cells" style={{ color: 'orangered' }}></i> 10 SEATS
+                                        </p>
+                                        <p className="mb-0">
+                                            <i className="fa-solid fa-calendar-days" style={{ color: 'orangered' }}></i> 4 YEARS
+                                        </p>
+                                    </div>
+                                    <h5 className="card-title mt-2">Electric Engineering</h5>
+                                    <p className="card-text mt-3">
+                                        Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.
+                                    </p>
+                                    <a
+                                        href="#"
+                                        className="btn btn-dark"
+                                        style={{ backgroundColor: 'orangered', border: 'none' }}
+                                    >
+                                        Apply Now
+                                    </a>
+                                </div>
                             </div>
-                            <h5 class="card-title">Electric Engineering</h5>
-                            <p class="card-text mt-3">Separated they live in. A small river named Duden flows by their place<br /> and supplies it with the necessary<br /> regelialia. It is a paradisematic<br /> country</p>
-                            <a href="#" class="btn btn-dark" style={{ backgroundColor: 'orangered' }}>Apply Now</a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div>
-                        <img src="https://themewagon.github.io/Next.js-Tailwind-CSS-Portfolio-Template/image/blog4.svg" class="card-img-top" alt="..."
-                            height="180px"></img>
-                        <div class="card-body ps-3" style={{ textAlign: 'left' }}>
-                            <div className='d-flex mt-3'>
-                                <p><i class="fa-solid fa-user" style={{ color: 'orangered' }}></i>MR.JOHN</p>
-                                <p className='ps-1'><i class="fa-solid fa-table-cells" style={{ color: 'orangered' }}></i>10 SEATS</p>
-                                <p className='ps-1'><i class="fa-solid fa-calendar-days" style={{ color: 'orangered' }}></i>4 YEARS</p>
-                            </div>
-                            <h5 class="card-title">Electric Engineering</h5>
-                            <p class="card-text mt-3">Separated they live in. A small river named Duden flows by their place<br /> and supplies it with the necessary<br /> regelialia. It is a paradisematic<br /> country</p>
-                            <a href="#" class="btn btn-dark" style={{ backgroundColor: 'orangered' }}>Apply Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div>
-                        <img src="https://themewagon.github.io/Next.js-Tailwind-CSS-Portfolio-Template/image/blog4.svg" class="card-img-top" alt="..."
-                            height="180px"></img>
-                        <div class="card-body ps-3" style={{ textAlign: 'left' }}>
-                            <div className='d-flex mt-3'>
-                                <p><i class="fa-solid fa-user" style={{ color: 'orangered' }}></i>MR.JOHN</p>
-                                <p className='ps-1'><i class="fa-solid fa-table-cells" style={{ color: 'orangered' }}></i>10 SEATS</p>
-                                <p className='ps-1'><i class="fa-solid fa-calendar-days" style={{ color: 'orangered' }}></i>4 YEARS</p>
-                            </div>
-                            <h5 class="card-title">Electric Engineering</h5>
-                            <p class="card-text mt-3">Separated they live in. A small river named Duden flows by their place<br /> and supplies it with the necessary<br /> regelialia. It is a paradisematic<br /> country</p>
-                            <a href="#" class="btn btn-dark" style={{ backgroundColor: 'orangered' }}>Apply Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div className='pb-5'>
-                        <img src="https://themewagon.github.io/Next.js-Tailwind-CSS-Portfolio-Template/image/blog4.svg" class="card-img-top" alt="..."
-                            height="180px"></img>
-                        <div class="card-body ps-3" style={{ textAlign: 'left' }}>
-                            <div className='d-flex mt-3'>
-                                <p><i class="fa-solid fa-user" style={{ color: 'orangered' }}></i>MR.JOHN</p>
-                                <p className='ps-1'><i class="fa-solid fa-table-cells" style={{ color: 'orangered' }}></i>10 SEATS</p>
-                                <p className='ps-1'><i class="fa-solid fa-calendar-days" style={{ color: 'orangered' }}></i>4 YEARS</p>
-                            </div>
-                            <h5 class="card-title">Electric Engineering</h5>
-                            <p class="card-text mt-3">Separated they live in. A small river named Duden flows by their place<br /> and supplies it with the necessary<br /> regelialia. It is a paradisematic<br /> country</p>
-                            <a href="#" class="btn btn-dark " style={{ backgroundColor: 'orangered' }}>Apply Now</a>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>
-    )
+    );
 }
