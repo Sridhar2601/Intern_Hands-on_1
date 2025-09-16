@@ -1,5 +1,5 @@
 import './CSS/Home.css'
-import Quote from './Quote'
+import Quote from './Quote' 
 
 export default function Home() {
   return (
