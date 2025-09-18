@@ -77,7 +77,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-lg-3 p-5" style={{ backgroundColor: 'darkblue', color: 'white', width: '309px' }}>
+                <div class="col-md-3 col-lg-3 p-5" style={{ backgroundColor: 'darkblue', color: 'white' }}>
                     <div class="pt-3">
                         <center><i class="fa-solid fa-medal" style={{ fontSize: '30px' }}></i></center>
                         <div class="card-body d-flex pt-3">
