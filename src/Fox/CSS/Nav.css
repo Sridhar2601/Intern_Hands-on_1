@@ -30,25 +30,3 @@ a {
     text-decoration: none;
     color: white;
 }
-
-/* Make Apply button consistent */
-.apply-btn {
-  background-color: orangered !important;
-  border: none !important;
-  padding: 8px 18px;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-/* For smaller screens, center align text/icons */
-@media (max-width: 768px) {
-  .nb p {
-    font-size: 14px;
-  }
-
-  .apply-btn {
-    width: 100%;
-    margin-top: 10px;
-  }
-}
-
