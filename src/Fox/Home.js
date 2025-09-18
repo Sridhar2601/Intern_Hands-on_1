@@ -16,7 +16,7 @@ export default function Home() {
                             <h1 style={{ fontSize: '45px', color: 'white' }}>University, college <br />School Education</h1>
                             <p style={{ color: 'white', fontWeight: 'bold' }}>A small river named Duden floes by their place and supplies it with <br /> the necessary regelialia</p>
                             <div class="mt-3">
-                                <a href="/Contact" class="btn btn-dark" style={{ backgroundColor: 'orangered',border:'none' }}>Contact Us</a>
+                                <a href="/Contact" class="btn btn-dark" style={{ backgroundColor: 'orangered', border: 'none' }}>Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -26,7 +26,7 @@ export default function Home() {
                             <h1 style={{ fontSize: '45px', color: 'White' }}>Education needs<br />Complete Solution</h1>
                             <p style={{ color: 'white', fontWeight: 'bold' }}>A small river named Duden floes by their place and supplies it with <br /> the necessary regelialia</p>
                             <div class="mt-3">
-                                <a href="/Contact" class="btn btn-dark" style={{ backgroundColor: 'orangered',border:'none' }}>Contact Us</a>
+                                <a href="/Contact" class="btn btn-dark" style={{ backgroundColor: 'orangered', border: 'none' }}>Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -541,7 +541,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className='row mt-5 pt-5'>
+                {/* <div className='row mt-5 pt-5'>
                     <div className='col-md-3'>
                         <div className="image-container1">
                             <img src="https://oxfordlearning.com/wp-content/uploads/2025/03/AdobeStock_132869690-scaled.jpeg" alt="..." height={300}></img>
@@ -578,7 +578,71 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
+                </div> */}
+
+
+                <div className='row mt-5 pt-5 g-4'>
+                    <div className='col-12 col-sm-6 col-md-3'>
+                        <div className="image-container1">
+                            <img
+                                src="https://oxfordlearning.com/wp-content/uploads/2025/03/AdobeStock_132869690-scaled.jpeg"
+                                alt="..."
+                                className="img-fluid rounded"
+                            />
+                            <div className="overlay-icons1">
+                                <a href="https://www.instagram.com/kreevtech_solutions/?igsh=MXh3MWdmZ3hoMXQ3bQ%3D%3D#">
+                                    <i className="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='col-12 col-sm-6 col-md-3'>
+                        <div className="image-container1">
+                            <img
+                                src="https://t3.ftcdn.net/jpg/06/98/15/28/360_F_698152816_iofj0EaoJp6jjKsHkMSoAEawmbKg3at0.jpg"
+                                alt="..."
+                                className="img-fluid rounded"
+                            />
+                            <div className="overlay-icons1">
+                                <a href="https://www.instagram.com/kreevtech_solutions/?igsh=MXh3MWdmZ3hoMXQ3bQ%3D%3D#">
+                                    <i className="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='col-12 col-sm-6 col-md-3'>
+                        <div className="image-container1">
+                            <img
+                                src="https://media.istockphoto.com/id/1470544060/photo/group-of-university-students-e-learning-on-laptop-at-campus.jpg?s=612x612&w=0&k=20&c=cwuT0WSg2xzQ0MhFzt2EbIL33IcS40-Mb3htuy9B0v0="
+                                alt="..."
+                                className="img-fluid rounded"
+                            />
+                            <div className="overlay-icons1">
+                                <a href="https://www.instagram.com/kreevtech_solutions/?igsh=MXh3MWdmZ3hoMXQ3bQ%3D%3D#">
+                                    <i className="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='col-12 col-sm-6 col-md-3'>
+                        <div className="image-container1">
+                            <img
+                                src="https://thumbs.dreamstime.com/b/teenage-girl-writing-notes-library-study-table-using-laptop-computer-textbooks-education-learning-concentration-bookshelves-376447223.jpg"
+                                alt="..."
+                                className="img-fluid rounded"
+                            />
+                            <div className="overlay-icons1">
+                                <a href="https://www.instagram.com/kreevtech_solutions/?igsh=MXh3MWdmZ3hoMXQ3bQ%3D%3D#">
+                                    <i className="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
 
         </div>
