@@ -597,7 +597,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className='col-12 col-sm-6 col-md-3'>
+                    <div className='col-12 col-sm-6 col-md-3 mb-5'>
                         <div className="image-container1">
                             <img
                                 src="https://t3.ftcdn.net/jpg/06/98/15/28/360_F_698152816_iofj0EaoJp6jjKsHkMSoAEawmbKg3at0.jpg"
@@ -615,7 +615,7 @@ export default function Home() {
                     <div className='col-12 col-sm-6 col-md-3'>
                         <div className="image-container1">
                             <img
-                                src="https://media.istockphoto.com/id/1470544060/photo/group-of-university-students-e-learning-on-laptop-at-campus.jpg?s=612x612&w=0&k=20&c=cwuT0WSg2xzQ0MhFzt2EbIL33IcS40-Mb3htuy9B0v0="
+                                src="https://t3.ftcdn.net/jpg/06/98/15/28/360_F_698152816_iofj0EaoJp6jjKsHkMSoAEawmbKg3at0.jpg"
                                 alt="..."
                                 className="img-fluid rounded"
                             />
